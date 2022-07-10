@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        
+        <title>Geolocalisation with map</title>
+           <link rel="stylesheet" type="text/css" 
+            href="style.css" />
+            <script type="text/javascript" src="index.js" defer></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&family=Baloo+2&family=Orbitron:wght@400;500&family=Righteous&display=swap" rel="stylesheet">
+           <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>           
+    </head>
+      <header></header>
+     <body>   
+
+      
+               <div id="presentation">
+                  <div id="welcome">
+                     <h1>Welcome in Marseille</h1>
+                     <h2></h2>
+                  </div>
+
+                  <div id="cityCorner">
+                     <div class="card-vport" onclick="vieuxPort()"><p>Vieux Port</p></div>
+                     <div class="card" onclick="prado()"><p>Le Prado</p></div>
+                     <div class="card" onclick="panier()"><p>Le Panier</p></div>
+                     <div class="card" onclick="nddm()"><p>Notre-Dame-du-Mont</p></div>
+                     <div class="card" onclick="malmousque()"><p>Malmousque</p></div>
+                     <div class="card" onclick="frioul()"><p>Le Frioul</p></div>
+                  </div>
+                  <div id="description"></div>
+                  <div id="contact">
+                     Contact : contact@visitemarseille.com
+                  </div>
+               </div>
+
+              <div id="map"></div>
+
+                   <!-- 
+                    The `defer` attribute causes the callback to execute after the full HTML
+                    document has been parsed. For non-blocking uses, avoiding race conditions,
+                    and consistent behavior across browsers, consider loading using Promises
+                    with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+                   -->
+            
+             
+   
+    </body>
+
+    
+    </html>
